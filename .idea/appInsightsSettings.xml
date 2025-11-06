@@ -8,10 +8,10 @@
             <InsightsFilterSettings>
               <option name="connection">
                 <ConnectionSetting>
-                  <option name="appId" value="com.example.notifiersample" />
-                  <option name="mobileSdkAppId" value="1:156348556197:android:2638e5519ba93d93643e4c" />
-                  <option name="projectId" value="easyfirebasenotifier" />
-                  <option name="projectNumber" value="156348556197" />
+                  <option name="appId" value="PLACEHOLDER" />
+                  <option name="mobileSdkAppId" value="" />
+                  <option name="projectId" value="" />
+                  <option name="projectNumber" value="" />
                 </ConnectionSetting>
               </option>
               <option name="signal" value="SIGNAL_UNSPECIFIED" />

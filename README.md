@@ -308,6 +308,14 @@ override fun getSubscriptionTopics(): List<String> {
 
 ---
 
+## 📱 Screenshots
+
+<div align="center">
+  <img src="screenshots/normal.png" width="45%" />
+  <img src="screenshots/dialog.png" width="45%" />
+</div>
+
+---
 
 ## 🤝 Contributing
 
