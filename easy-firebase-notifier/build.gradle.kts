@@ -1,6 +1,5 @@
 plugins {
     alias(libs.plugins.android.library)
-    alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.serialization)
     id("com.google.gms.google-services")
     id("maven-publish")
@@ -8,7 +7,7 @@ plugins {
 
 android {
     namespace = "com.github.muhammadnoman11.easyfirebasenotifier"
-    compileSdk = 36
+    compileSdk = 37
 
     defaultConfig {
         minSdk = 26
@@ -30,13 +29,17 @@ android {
         sourceCompatibility = JavaVersion.VERSION_17
         targetCompatibility = JavaVersion.VERSION_17
     }
-    kotlinOptions {
-        jvmTarget = "17"
-    }
 
     packaging {
         resources {
             excludes += "META-INF/DEPENDENCIES"
+            excludes += "META-INF/INDEX.LIST"
+        }
+    }
+
+    publishing {
+        singleVariant("release") {
+            withSourcesJar()
         }
     }
 
@@ -81,7 +84,7 @@ afterEvaluate {
                 from(components["release"])
                 groupId = "com.github.muhammadnoman11"
                 artifactId = "EasyFirebaseNotifier"
-                version = "1.0"
+                version = "1.1"
             }
         }
     }

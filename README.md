@@ -41,16 +41,17 @@ android {
     packaging {
         resources {
             excludes += "META-INF/DEPENDENCIES"
+            excludes += "META-INF/INDEX.LIST"
         }
     }
 }
 
 dependencies {
-    implementation("com.github.muhammadnoman11:EasyFirebaseNotifier:1.0")
+    implementation("com.github.muhammadnoman11:EasyFirebaseNotifier:1.1")
     
     // Coil for image loading (optional)
-    implementation("io.coil-kt.coil3:coil-compose:3.3.0")
-    implementation("io.coil-kt.coil3:coil-network-okhttp:3.3.0")
+    implementation("io.coil-kt.coil3:coil-compose:3.6.3")
+    implementation("io.coil-kt.coil3:coil-network-okhttp:3.6.3")
 }
 ```
 
